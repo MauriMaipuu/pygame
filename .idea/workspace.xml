@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f738392b-5a2c-41db-89cf-b74873834219" name="Changes" comment="Post koos kolmnurgaga">
+    <list default="true" id="f738392b-5a2c-41db-89cf-b74873834219" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yl2/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yl2/.idea/Pygame.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yl2/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yl2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yl2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yl2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yl1/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Yl1/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Yl2/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Yl2/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674212115139</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Pood, VIKKi logo ja moogaga">
+      <created>1674215920400</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674215920401</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -180,7 +182,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Description Needed :&gt;" />
     <MESSAGE value="Post koos kolmnurgaga" />
-    <option name="LAST_COMMIT_MESSAGE" value="Post koos kolmnurgaga" />
+    <MESSAGE value="Pood, VIKKi logo ja moogaga" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pood, VIKKi logo ja moogaga" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

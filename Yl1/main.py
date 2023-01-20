@@ -1,15 +1,12 @@
-import pygame
-from pygame import draw
-import sys
-import subprocess
+import pygame  # impordime pygame
 
 pygame.init()
 
-GUI = pygame.display.set_mode((300, 600))
+GUI = pygame.display.set_mode((300, 600))  # loome ekraani
 pygame.display.set_caption("Foor - Mauri Maipuu")
 GUI.fill([204, 102, 255])
 
-pygame.draw.rect(GUI, [102, 102, 153], [110, 35, 120, 270], 0)
+pygame.draw.rect(GUI, [102, 102, 153], [110, 35, 120, 270], 0)  # loome foori koos posti ja kolmnurgaga
 
 pygame.draw.rect(GUI, [194, 194, 214], [95, 15, 115, 270], 0)
 pygame.draw.rect(GUI, [0, 0, 0], [100, 20, 105, 260], 0)
