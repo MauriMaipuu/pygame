@@ -1,3 +1,5 @@
+#!!! EI TOOTA HETKEL !!!
+
 months = ['Jaanuar', 'Veebruar', 'M2rts', 'Aprill', 'Mai', 'Juuni', 'Juuli', 'August', 'September', 'Oktoober', 'November', 'Detsember']
 
 x = (input("Sisesta kuup2ev (dd.mm.yyyy): "))
