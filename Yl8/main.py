@@ -20,8 +20,11 @@ keskmine = round(sum(sammude_list)/len(sammude_list))
 print("Keskmine on:", keskmine)
 
 #miinimum sammude arv
-print("V2iksem sammude arv:", min(sammude_list))
+minimum = min(sammude_list)
+päev = sammude_list.index(minimum)
+print("V2iksem sammude arv:",minimum,"oli p2eval ",päev,".")
 
 #suurim sammude arv
-max_value = max(sammude_list)
-print("Suurim sammude arv:", max(sammude_list), ",", sammude_list.index(max_value), "p2eval")
+maximum = max(sammude_list)
+päev2 = sammude_list.index(maximum)
+print("Suurim sammude arv:", maximum, "oli p2eval", päev2)
