@@ -16,10 +16,12 @@ sammud_kokku = sum(sammude_list)
 print("Samme on kokku:", sammud_kokku)
 
 #keskmise arvutamine
-print("Keskmine on:", sum(sammude_list)/len(sammude_list))
+keskmine = round(sum(sammude_list)/len(sammude_list))
+print("Keskmine on:", keskmine)
 
 #miinimum sammude arv
 print("V2iksem sammude arv:", min(sammude_list))
 
 #suurim sammude arv
-print("Suurim sammude arv:", max(sammude_list))
+max_value = max(sammude_list)
+print("Suurim sammude arv:", max(sammude_list), ",", sammude_list.index(max_value), "p2eval")
