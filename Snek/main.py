@@ -4,6 +4,7 @@ import random
 
 pygame.init()
 
+#värvid
 white = (255, 255, 255)
 yellow = (255, 255, 102)
 black = (0, 0, 0)
@@ -11,36 +12,42 @@ red = (213, 50, 80)
 green = (0, 255, 0)
 blue = (50, 153, 213)
 
-dis_width = 1280
-dis_height = 720
+#ekraani suurus
+dis_width = 800
+dis_height = 600
 
 dis = pygame.display.set_mode((dis_width, dis_height))
-pygame.display.set_caption('Snake Game by Edureka')
+
+#akna pealkiri
+pygame.display.set_caption('Ussi m2ng')
 
 clock = pygame.time.Clock()
 
-snake_block = 20
+#ussi kuju ja kiirus
+snake_block = 10
 snake_speed = 10
 
+#fondi stiil
 font_style = pygame.font.SysFont("bahnschrift", 25)
 score_font = pygame.font.SysFont("comicsansms", 35)
 
 
+#defineerime skoori Mida ta n2itaks
 def Your_score(score):
-    value = score_font.render("Your Score: " + str(score), True, yellow)
+    value = score_font.render("Skoor: " + str(score), True, yellow)
     dis.blit(value, [0, 0])
 
-
+#defineerime ussi mis läheks pikemaks kui ta sööb
 def our_snake(snake_block, snake_list):
     for x in snake_list:
         pygame.draw.rect(dis, black, [x[0], x[1], snake_block, snake_block])
 
-
+#defineerime sõnumi
 def message(msg, color):
     mesg = font_style.render(msg, True, color)
     dis.blit(mesg, [dis_width / 6, dis_height / 3])
 
-
+#defineerime gameloopi mis n2itab et m2ng kogu aeg liigub ja mäng ei ole kinni pandud ning läbi
 def gameLoop():
     game_over = False
     game_close = False
@@ -54,9 +61,10 @@ def gameLoop():
     snake_List = []
     Length_of_snake = 1
 
-    foodx = round(random.randrange(0, dis_width - snake_block) / 20.0) * 20.0
-    foody = round(random.randrange(0, dis_height - snake_block) / 20.0) * 20.0
+    foodx = round(random.randrange(0, dis_width - snake_block) / 10.0) * 10.0
+    foody = round(random.randrange(0, dis_height - snake_block) / 10.0) * 10.0
 
+#kui mäng on läbi siis saadab ta sõnumi et sa kaotasid, ning lisame nuppud millega uuesti mängida ja mängu kinni panna
     while not game_over:
 
         while game_close == True:
@@ -73,6 +81,7 @@ def gameLoop():
                     if event.key == pygame.K_c:
                         gameLoop()
 
+#võimalik noolte nuppudega mängimine
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 game_over = True
@@ -112,13 +121,15 @@ def gameLoop():
 
         pygame.display.update()
 
+        clock.tick(snake_speed)
+
         if x1 == foodx and y1 == foody:
             foodx = round(random.randrange(0, dis_width - snake_block) / 10.0) * 10.0
             foody = round(random.randrange(0, dis_height - snake_block) / 10.0) * 10.0
             Length_of_snake += 1
-            snake_speed = snake_speed + 5  # fixed the assignment
 
-        clock.tick(snake_speed)
+
+
 
     pygame.quit()
     quit()
