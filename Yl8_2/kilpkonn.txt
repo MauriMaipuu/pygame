@@ -1,0 +1,9 @@
+edasi 100
+paremale 120
+edasi 100
+paremale 120
+edasi 200
+vasakule 120
+edasi 100
+vasakule 120
+edasi 100

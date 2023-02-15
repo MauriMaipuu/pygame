@@ -19,18 +19,18 @@ def draw_shape(kolmnurk, turtel): #joonistab kujundi
         elif command[0] == 'vasakule':
             turtel.left(int(command[1]))
 
-kordade_arv = int(input("Mitu korda kujund joonistada? ")) #kysitakse mitu korda kujundit soovitakse joonistada
+how_many = int(input("Mitu korda kujund joonistada? ")) #kysitakse mitu korda kujundit soovitakse joonistada
 
 instr = instructions('kilpkonn.txt')
 
-a = input("Sisestage programmi pealkiri ")
+a = input("Sisestage programmi pealkiri: ")
 turtle.title(a)
 
 
 turtil = turtle.Turtle()
 turtil.speed(0)
 
-for i in range(kordade_arv):
+for i in range(how_many):
     draw_shape(instr)
 
 turtle.exitonclick()
